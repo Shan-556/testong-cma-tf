@@ -1,7 +1,7 @@
   resource "aws_launch_template" "ec2_instance" {
   name_prefix   = "shan-web-launch-template"
   image_id      = data.aws_ami.amazon_linux.id
-  instance_type = var.instance_type["test"]
+  instance_type = var.instance_type["prd"]
 
   key_name               = "shan"
   vpc_security_group_ids = [aws_security_group.shan_sg.id]
