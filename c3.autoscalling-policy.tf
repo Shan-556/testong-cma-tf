@@ -7,7 +7,7 @@
     predefined_metric_specification {
       predefined_metric_type = "ASGAverageCPUUtilization"
     }
-    target_value           = 80.0 # Target 50% CPU .5 millicores of CPU utilization. When the average CPU utilization exceeds this value, the policy will trigger scaling actions.
+    target_value           = 1.0 # Target 50% CPU .5 millicores of CPU utilization. When the average CPU utilization exceeds this value, the policy will trigger scaling actions.
     
   }
 }
